@@ -1,4 +1,4 @@
-import {circliful} from 'js-plugin-circliful';
+import {circliful} from '/js-plugin-circliful';
 const host = location.origin
 const axiosApp = axios.create({
     baseUrl: host

@@ -1,6 +1,5 @@
-let graphList
 async function initHome() {
-    graphList = await initGraphs()
+    graphList = await initGraphs() //FIXME initGraphs is not defined, maybe module export are broken??
     //we then update the graphs with the data from the api
     for (graph of graphList) {
         updateGraph(graph)
@@ -18,3 +17,4 @@ async function initHome() {
         document.getElementById("count-holder").appendChild(holder)
     }
 }
+initHome()
